@@ -1,26 +1,30 @@
 a = [2, 4, 1, 7, 9, 6]
 
 # Output the second element: 4:
-print()
+print(a[1])
 
 # Output the second-to-last element: 9
-print()
+print(a[-2])
 
 # Output the last three elements in the array: [7, 9, 6]
-print()
+# Everything from end minus the given index (inclusive)
+print(a[-3:])
 
 # Output the two middle elements in the array: [1, 7]
-print()
+# from index (inclusive) to index + 1 (exclusive)
+print(a[2:4])
 
 # Output every element except the first one: [4, 1, 7, 9, 6]
-print()
+# everything from index and beyond
+print(a[1:])
 
 # Output every element except the last one: [2, 4, 1, 7, 9]
-print()
+print(a[:-1])
 
 # For string s...
 
 s = "Hello, world!"
 
 # Output just the 8th-12th characters: "world"
-print()
+# from index (inclusive) to index + 1 (exclusive)
+print(s[7:12])
