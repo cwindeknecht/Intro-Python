@@ -6,13 +6,14 @@ import os
 # See docs for the sys module: https://docs.python.org/3.7/library/sys.html
 
 # Print out the command line arguments in sys.argv, one per line:
-
+for arg in sys.argv:
+    print("arg:", arg)
 
 # Print out the plaform from sys:
-print()
+print("platform:",sys.platform)
 
 # Print out the Python version from sys:
-print()
+print("python version:",sys.version)
 
 
 
