@@ -29,4 +29,8 @@ waypoints.append({"lat":50, "lon":100, "name":"The best place"})
 
 # Write a loop that prints out all the field values for all the waypoints
 for wp in waypoints:
-    print("name: {2}\nlat: {0}\nlon: {1}\n".format(wp['lat'], wp['lon'],wp['name']))
+    # How to check if a property exists
+    if 'name' in wp: 
+        if 'lat' in wp: 
+            if 'lon' in wp: 
+                print("name: {2}\nlat: {0}\nlon: {1}\n".format(wp['lat'], wp['lon'],wp['name']))
